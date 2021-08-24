@@ -17,7 +17,6 @@ function clickGnb() {
 }
 
 
-
 // program_area 이미지에 커서 올리면 마우스 바뀌는거...
 const circle = document.querySelector(".cursorCircle");
 
