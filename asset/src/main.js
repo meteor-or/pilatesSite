@@ -41,28 +41,46 @@ document.addEventListener("mouseMove", (e) => {
 });
 
 // scrollEvent
-const bg = document.querySelector('.bg_thumBox')
-const userScroll = window.pageYOffset;
-const programItem = document.querySelector('.program_item')
+const bg = document.querySelectorAll('.bg_thumBox')
+const programItem = document.querySelectorAll('.program_item')
 const bannerBox = document.querySelector('.banner_box')
 const titleBaneer = document.querySelector('.title_banner')
 const descBaneer = document.querySelector('.desc_banner')
 
-console.log(userScroll);
-console.log(bannerBox.offsetTop);
-console.log(bannerBox.clientHeight);
-console.log(bannerBox.offsetTop - bannerBox.clientHeight);
+console.log(bg[1]);
+console.log(programItem);
 
 window.addEventListener('scroll', function() {
-  if ( userScroll >= programItem.offsetTop - programItem.clientHeight) {
-    bg.classList.add('animate__slideOutRight')
+  let userScroll = window.pageYOffset;
+  if ( userScroll >= programItem[0].offsetTop - programItem[0].clientHeight) {
+    bg[0].classList.add('animate__slideOutRight')
+  } 
+  });
+
+window.addEventListener('scroll', function() {
+  let userScroll = window.pageYOffset;
+  if ( userScroll >= programItem[1].offsetTop - programItem[1].clientHeight) {
+    bg[1].classList.add('animate__slideOutRight')
   } 
   });
   
 window.addEventListener('scroll', function() {
-  if ( userScroll >= bannerBox.offsetTop-bannerBox.clientHeight-100) {
+  let userScroll = window.pageYOffset;
+  if ( userScroll >= programItem[2].offsetTop - programItem[2].clientHeight) {
+    bg[2].classList.add('animate__slideOutRight')
+  } 
+  });
+window.addEventListener('scroll', function() {
+  let userScroll = window.pageYOffset;
+  if ( userScroll >= programItem[3].offsetTop - programItem[3].clientHeight) {
+    bg[3].classList.add('animate__slideOutRight')
+  } 
+  });
+
+window.addEventListener('scroll', function() {
+  let userScroll = window.pageYOffset;
+  if ( userScroll >= bannerBox.offsetTop-bannerBox.clientHeight) {
     descBaneer.classList.add('animate__fadeIn')
     titleBaneer.classList.add('animate__fadeInRight')
   } 
   });
-  

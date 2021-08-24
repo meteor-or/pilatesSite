@@ -370,11 +370,18 @@ img[alt="arrow"] {
   backface-visibility: hidden;
 }
 .bg_thumBox {
+  display: flex;
   position: absolute;
   height: inherit;
-  background: #000;
+  background: #87a8a4;
+  font-weight: bold;
+  line-height: inherit;
+  color: #f7f6e7;
+  font-size: 2rem;
   z-index: 13;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .animate__slideOutRight {
