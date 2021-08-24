@@ -534,7 +534,7 @@ footer {
 
 #kakaotalk {
   position: fixed;
-  background-color: #fee500;
+  background-color: #f7f6e7;
   z-index: 9999;
   transform: translateY(-50%);
   top: 50%;
@@ -553,10 +553,10 @@ img[alt="kakaotalk"] {
   padding-top: 6px;
 }
 
-.txt_kakaotalk {
+.txt_portfolio {
   font-size: 14px;
   font-weight: 700;
-  color: #3a1d1d;
+  color: #87a8a4;
   writing-mode: vertical-lr;
 }
 

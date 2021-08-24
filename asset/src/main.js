@@ -16,18 +16,6 @@ function clickGnb() {
 }
 }
 
-//Review x축 끝으로 이동
-
-const arrowNext = document.querySelector('.arrow_next');
-const arrowPrev = document.querySelector('.arrow_prev');
-const listReview = document.querySelector('.list_review');
-
-arrowNext.addEventListener('click', function() {
-  listReview.scrollLeft += 400;
-});
-arrowPrev.addEventListener('click', function() {
-  listReview.scrollLeft -= 400;
-});
 
 
 // program_area 이미지에 커서 올리면 마우스 바뀌는거...
