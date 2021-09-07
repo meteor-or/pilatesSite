@@ -1,3 +1,1 @@
-# pilatesSite
-# portfolio
 # portfolio
