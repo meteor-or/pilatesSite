@@ -50,6 +50,7 @@ body {
   font-family: "Jakarta", "neoDgm", "Noto Sans KR", sans-serif;
   color: #000;
   -webkit-font-smoothing: antialiased;
+  background-color: #fff;
 }
 
 ul {
